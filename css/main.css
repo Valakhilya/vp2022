@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.t396 > * {
+    color: #693A26;
+}
+
+.t396 a.tn-atom {
+    font-size: 26px !important;
+}
+
+.top-arrow {
+    color: #693A26;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-arrow::before {
+    content: ' ';
+}
+
+.bkg {
+    background-color: #FDF6EB;
+}
+
+.usual-img {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.usual-img img {
+    border: 12px solid #d9c1a8;
+}
+
+.top {
+    background-image: url('../images/orn1.png');
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "hero";
+}
+
+.intro {
+    grid-area: hero;
+    font-size: 59px;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    line-height: 1.7;
+    font-weight: 700;
+    z-index: 2;
+    margin-top: 80px;
+    margin-left: calc(50% - 520px);
+    width: 832px;
+}
+
+.gurudev-img {
+    width: 517px;
+    height: 450px;
+    margin-left: calc(50% + 64px);
+    margin-top: 190px;
+    grid-area: hero;
+    z-index: 2;
+}
+
+.gurudev-img img {
+    width: 100%;
+}
+
+.blessings {
+    display: grid;
+    grid-template-areas: "image";
+    justify-items: center;
+    align-items: center;
+    height: 550px;
+}
+
+.blessings-img {
+    width: 807px;
+    height: 433px;
+    grid-area: image;
+    z-index: 2;
+}
+
+.blessings-img img {
+    width: 100%;
+}
+
+.flower1-img {
+    width: 830px;
+    height: 581px;
+    opacity: 0.05;
+    grid-area: image;
+}
+
+.flower1-img img {
+    width: 100%;
+}
+
+.offerings-list {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:    "header header"
+                            "left right";
+    background: url('../images/orn2.png') left center no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+}
+
+.offerings-top {
+    grid-area: header;
+    line-height: 1.55;
+    font-weight: 600;
+    text-align: center;
+}
+
+.offerings-caption {
+    font-size: 47px;
+}
+
+.offerings-header {
+    font-size: 38px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.offerings-menu-container {
+    grid-area: left;
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.offerings-menu {
+   list-style-type: none; 
+}
+
+.offerings-img {
+    grid-area: right;
+    border: 12px solid #d9c1a8;
+    width: 560px;
+    height: 560px;
+    margin: 20px 0;
+}
+
+.offerings-img img {
+    width: 100%;
+}
+
+.offerings-item {
+    font-size: 32px;
+    font-family: 'FuturaPT', Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    border-width: 1px;
+    border-radius: 30px;
+    height: 55px;
+}
+
+.offerings-item-link {
+    color: #693A26;
+    text-decoration: underline dotted #D9C1A8;
+}
+
+.gap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.flower2-img {
+    height: 306px;
+    width: 684px;
+    z-index: 2;
+}
+
+.flower2-img img {
+    width: 100%;
+}
+
+.record {
+    display: grid;
+    grid-template-areas: "record";
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.record-header {
+    grid-area: record;
+    color: #6B2016;
+    font-size: 50px;
+    font-family: 'FuturaPT', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    text-align: center;
+    z-index: 3;
+}
+
+.record-header-bkg {
+    grid-area: record;
+}
+
+.record-header-elem {
+    width: 100%;
+    height: 96px;
+}
+
+.record-header-bkg img {
+    width: 100%;
+}
+
+.record-body {
+    width: 70%;
+    font-size: 23px;
+    font-family: 'FuturaPT', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+.copyright {
+    color: #6B2016;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+    .intro {
+        font-size: 52px;
+        margin-left: calc(50% - 400px);
+        width: 716px;
+    }
+
+    .gurudev-img {
+        margin-left: 45%;
+    }
+
+    .offerings-header {
+        font-size: 33px;
+    }
+
+    .offerings-caption {
+        font-size: 33px;
+    }
+
+    .offerings-img {
+        width: 480px;
+        height: auto;
+    }
+
+    .offerings-item-link {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 959px) {
+    .record-header {
+        font-size: 38px;
+    }
+
+    .top {
+        height: 480px;
+        /* width: 960px; */
+    }
+
+    .intro {
+        margin-top: 45px;
+        font-size: 34px;
+        margin-left: calc(50% - 250px);
+        width: 492px;
+    }
+
+    .gurudev-img {
+        width: 390px;
+        margin-top: 140px;
+        margin-left: calc(50% - 70px);
+    }
+
+    .blessings {
+        /* width: 960px; */
+    }
+
+    .blessings-img {
+        width: 75%;
+        height: auto;
+    }
+
+    .flower1-img {
+        width: 75%;
+        height: auto;
+    }
+
+    .offerings-list {
+        /* width: 960px; */
+        grid-template-areas:    "header"
+                                "main"
+                                "footer";
+    }
+
+    .offerings-top {
+        grid-area: header;
+    }
+
+    .offerings-menu-container {
+        grid-area: footer;
+    }
+
+    .offerings-img {
+        grid-area: main;
+    }
+
+    .offerings-caption {
+        font-size: 23px;
+    }
+
+    .offerings-header {
+        font-size: 23px;
+    }
+
+    .record-body {
+         font-size: 24px;
+    }
+    
+    .record-header {
+         font-size: 32px;
+    }
+
+    .record-header-elem {
+         height: 48px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .top {
+        /* width: 745px; */
+    }
+
+    .blessings {
+        /* width: 735px; */
+    }
+
+    .offerings-list {
+        /* width: 735px; */
+    }
+}
+
+
+@media screen and (max-width: 639px) {
+    .intro {
+        font-size: 30px;
+        width: 430px;
+        margin-left: calc(50% - 190px);
+    }
+
+    .gurudev-img {
+        width: 380px;
+        margin-left: calc(50% - 150px);
+        margin-top: 240px;
+    }
+
+    .top {
+        height: 570px;
+    }
+
+    .record-body {
+         font-size: 20px;
+    }
+    
+    .record-header {
+         font-size: 24px;
+    }
+
+    .record-header-elem {
+         height: 38px;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+    .gurudev-img {
+        width: 298px;
+    }
+
+    .intro {
+        font-size: 27px;
+        width: 289px;
+        margin-top: 23px;
+        margin-left: 64px;
+    }
+
+     .top {
+         height: 500px;
+     }
+
+     .offerings-img {
+        width: 298px;
+        height: 298px;
+     }
+
+     .offerings-item-link {
+        font-size: 20px;
+     }
+
+     .offerings-caption {
+        font-size: 25px;
+     }
+
+     .offerings-header {
+        font-size: 16px;
+     }
+
+     .record-header {
+         font-size: 18px;
+         height: auto;
+     }
+
+     .record-header-elem {
+         height: auto;
+     }
+
+     .record-body {
+         font-size: 16px;
+     }
+
+
+}
